@@ -52,7 +52,7 @@ node index.js
 ```js
 {
     "from": ${sender},
-    "to": ${contract_address},
+    "to": ${receiver_address},
     "key": ${sender_private_key},
     "amount": 10 // ETH value
 }
