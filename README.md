@@ -81,7 +81,10 @@ GET http://localhost:3000/api/v1/eth/receipt?txhash=${transaction_hash}
 ### Multisignature API: Get contract withdraw limit
 - `GET http://localhost:3000/api/v1/multisig/withdraw-limit`.
 
-### Multisignature API: Withdraw 3 ETH from contract (this is multisig transfer): 
+### Multisignature API: Withdraw 3 ETH from contract (this is multisig transfer):
+- **Notes**: 
+    - Contract balance must not be 0. Need deposit some ETH before calling this api to withdraw.
+    - The widraw amount must not exeed `withdraw limit`
 - `POST http://localhost:3000/api/v1/multisig/withdraw`.
 - Payload:
 ```js
