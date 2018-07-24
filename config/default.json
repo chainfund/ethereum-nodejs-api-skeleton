@@ -1,0 +1,6 @@
+{
+    "api": {
+        "eth_node": "http://localhost:8545"
+    },
+    "server_port": 3000
+}
